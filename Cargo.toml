@@ -5,4 +5,6 @@ edition = "2021"
 
 [dependencies]
 libc = "0.2.167"
+
+[target.'cfg(target_os="macos")'.dependencies]
 objc = { version = "0.2.7", features = ["exception", "verify_message"] }
